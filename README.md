@@ -4,7 +4,7 @@ Fixes the formatting problem of bunq csv statement exports, where the amounts ar
 
 ## Website Tool
 
-You can use this tool immediately on (https://j-norwood-young.github.io/bunq-fix-csv/)[https://j-norwood-young.github.io/bunq-fix-csv/].
+You can use this tool immediately on [https://j-norwood-young.github.io/bunq-fix-csv/](https://j-norwood-young.github.io/bunq-fix-csv/).
 
 ## Usage
 
