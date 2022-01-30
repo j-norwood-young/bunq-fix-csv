@@ -2,6 +2,10 @@
 
 Fixes the formatting problem of bunq csv statement exports, where the amounts are formatted with a Dutch number format with a comma deciman separator (xxx.xxx.xxx,xx), but most accounting software expects plain number format with a full stop separator (xxxxxxxxx.xx).
 
+## Website Tool
+
+You can use this tool immediately on (https://j-norwood-young.github.io/bunq-fix-csv/)[https://j-norwood-young.github.io/bunq-fix-csv/].
+
 ## Usage
 
 ```
@@ -18,5 +22,7 @@ Examples:
                                          formatting for importing into
                                          accounting packages
 ```
+
+## Copyright
 
 Copyright Jason Norwood-Young <jason@10layer.com> 2022
