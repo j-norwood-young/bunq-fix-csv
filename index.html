@@ -19,7 +19,7 @@
         }
     </style>
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <div class="container">
         <h1>Bunq Fix CSV</h1>
         <p>This tool will fix the CSV file from bunq. It fixes the number format and the column names, ready to import into Xero.</p>
@@ -42,6 +42,15 @@
         <input class="drop_zone" type="file" id="files" name="files[]" accept=".csv" multiple />
         <div id="output_files"></div>
     </div>
-    
+    <!-- Footer -->
+    <footer class="footer mt-auto bg-dark">
+        <div class="container p-3">
+            <span class="text-light">
+                <a href="https://j-norwood-young.github.io/bunq-fix-csv/" target="_blank">Bunq Fix CSV</a> is a tool to fix CSV files from <a href="https://www.bunq.com/">bunq</a>, especially for importing into <a href="https://xero.com">Xero</a>.
+                See the code on <a href="https://github.com/j-norwood-young/bunq-fix-csv">Github</a>.
+                Copyright &copy; 2022 <a href="https://10layer.com" target="_blank">Jason Norwood Young</a>.
+            </span>
+        </div>
+    </footer>
 </body>
 </html>
