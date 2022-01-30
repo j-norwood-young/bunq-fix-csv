@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-const BunqCSV = require("./libs/buncsv.js");
+const fix_amounts = require("./libs/fix_amounts.js");
+const fix_headings = require("./libs/fix_headings.js");
+
 const fs = require("fs");
 var argv = require('yargs/yargs')(process.argv.slice(2))
     .usage('Usage: $0 -f <csvfile> -o [fileout] [options]')
-    // .command('csvfile', 'bunq-exported csv file')
     .example('$0 -f bunk-statement.csv', 'change csv amounts to correct formatting for importing into accounting packages')
     .alias('f', 'file')
     .nargs('f', 1)
@@ -28,7 +29,7 @@ if (!fs.statSync(argv.file).isFile()) {
     process.exit(1);
 }
 const csvdata = fs.readFileSync(argv.file, "utf8");
-const result = BunqCSV(csvdata);
+const result = fix_headings(fix_amounts(csvdata));
 if (argv.fileout) {
     fs.writeFileSync(argv.fileout, result.toString(), "utf8");
 } else {
