@@ -1,6 +1,6 @@
 {
   "name": "bunq-fix-csv",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Fix the number format used by bunq when you download a csv",
   "main": "bunq-fix-csv.js",
   "scripts": {
