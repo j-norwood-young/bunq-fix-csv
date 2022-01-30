@@ -4,6 +4,7 @@ Fixes the formatting problem of bunq csv statement exports, where the amounts ar
 
 ## Usage
 
+```
 Usage: bunq-fix-csv.js -f <csvfile> -o [fileout] [options]
 
 Options:
@@ -16,5 +17,6 @@ Examples:
   bunq-fix-csv.js -f bunk-statement.csv  change csv amounts to correct
                                          formatting for importing into
                                          accounting packages
+```
 
 Copyright Jason Norwood-Young <jason@10layer.com> 2022
